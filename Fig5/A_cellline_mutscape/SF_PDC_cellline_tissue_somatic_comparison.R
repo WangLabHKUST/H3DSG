@@ -19,6 +19,11 @@ for(i in 2:dim(data)[2])
         if(data[j,i]=="frameshift")
         {
           som[j,i-1] <-2
+        }else{
+          if(data[j,i]=="stop_gained")
+          {
+            som[j,i-1] <-3
+          }
         }
       }
     }
@@ -38,8 +43,8 @@ lwd_number <- 0.1
 
 #row_ha <- rowAnnotation(freq = anno_barplot(apply(Mutat_matrix,1,function(x)length(which(x>0)))))
 combine_mut <- Heatmap(som,
-                       name="Som3",col=c('white', 'black','hotpink1'),
-                       column_split = c(rep(1,2),rep(2,2),rep(3,2),rep(4,3)),
+                       name="Som3",col=c('white', 'black','hotpink1',"#996633"),
+                       column_split = c(rep(1,2),rep(2,2),rep(3,2),rep(4,3),rep(5,2)),
                        show_column_names = T,
                        row_split=c(rep(1,3),rep(2,3),rep(3,6)),
                        rect_gp = gpar(col = "grey20", lwd = lwd_number),
@@ -50,7 +55,7 @@ combine_mut <- Heatmap(som,
                        row_names_gp = gpar(fontsize =size_numer_font_size, fontface="italic", col="black"),
                        column_names_gp = gpar(fontsize = size_numer_font_size,
                                               fontface="italic",col = c(rep(c("blue","red"),3),
-                                                                        rep("blue",2),"red")),
+                                               rep("blue",2),"red",rep("blue",2))),
                        heatmap_legend_param = list(title = "Mutation", at = c(1,2), 
                                                    labels = c("Missense","Frameshift"
                                                               ),
@@ -59,7 +64,7 @@ combine_mut <- Heatmap(som,
 )
 
 combine_mut
-pdf(paste('SP_PDC_4_cell_line_som_tissue.pdf',sep="/"),
+pdf(paste('SP_PDC_5_cell_line_som_tissue.pdf',sep="/"),
     width=6,height = 6)
 combine_mut
 dev.off()
