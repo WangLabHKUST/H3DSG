@@ -2,7 +2,7 @@ rm(list=ls())
 library(rstudioapi)
 current_path = rstudioapi::getActiveDocumentContext()$path 
 setwd(dirname(current_path ))
-data <- readxl::read_excel('PDC_cellline_4_mutations.xlsx',sheet=1)
+data <- readxl::read_excel('PDC_cellline_5_mutations.xlsx',sheet=1)
 som <- matrix(0,nrow=length(data$mutation),ncol=length(colnames(data))-1)
 rownames(som) <- data$mutation
 colnames(som) <- colnames(data)[-1]
@@ -56,8 +56,8 @@ combine_mut <- Heatmap(som,
                        column_names_gp = gpar(fontsize = size_numer_font_size,
                                               fontface="italic",col = c(rep(c("blue","red"),3),
                                                rep("blue",2),"red",rep("blue",2))),
-                       heatmap_legend_param = list(title = "Mutation", at = c(1,2), 
-                                                   labels = c("Missense","Frameshift"
+                       heatmap_legend_param = list(title = "Mutation", at = c(1,2,3), 
+                                                   labels = c("Missense","Frameshift","Stop_gain"
                                                               ),
                                                     border = "black"
                        )
