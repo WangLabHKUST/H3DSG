@@ -13,7 +13,7 @@ This repository contains the code for the multi-omics and spatial single cell in
 ## System requirements and dependencies
 Preprocessing of the raw sequencing data requires high performance clusters. We used a cluster equipped with Linux CentOS 7 (kernel version 3.10.0-1062.el7.x86_64) with 40 cores, 256 GB RAM and at least 100TB storage. Code for these preprocessing steps are in the "Preprocessing" folder.
 
-The other parts of the code can be run on a desktop. We tested the code on a MacBook Pro with macOS Sonoma 14.3, 32 GB RAM and 1 TB storage. Required dependencies include R 4.4.1 and python 3.9.6. We also used QuPath 0.5.0 which is downloadable at https://qupath.github.io/. The required R and python packages are included in each of the code snippets.
+The other parts of the code can be run on a desktop. We tested the code on a MacBook Pro with macOS Sonoma 14.3, 32 GB RAM and 1 TB storage. Required dependencies include R 4.4.1 and python 3.9.6. The required R and python packages are included in each of the code snippets. We also used QuPath 0.5.0 which is downloadable at https://qupath.github.io/. 
 
 ## Installation
 
