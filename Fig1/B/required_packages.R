@@ -1,8 +1,0 @@
-if (!require("BiocManager", quietly = TRUE))
-  install.packages("BiocManager")
-if (!require('ComplexHeatmap')) 
-  BiocManager::install('ComplexHeatmap')
-if (!require('circlize')) 
-  install.packages('circlize')
-if (!require('readxl')) 
-  install.packages('readxl')
