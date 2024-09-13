@@ -44,7 +44,7 @@ NAN_plot <- NAN_plot +stat_pvalue_manual(
 NAN_plot<- NAN_plot+coord_flip()
 NAN_plot
 figure_2<-rbind(ggplotGrob(NAN_plot),size="last")
-ggsave(file="Fig6_FANCI_IHC_box_comparison.pdf",
+ggsave(file="FANCI_IHC_box_comparison.pdf",
        plot=figure_2,bg = 'white', width =8, height = 6, units = 'cm', dpi = 600)
 
 used_exp_PCNA <- as.data.frame(used_exp_IHC[,c(1,2,5)])
@@ -79,7 +79,7 @@ NAN_plot <- NAN_plot +stat_pvalue_manual(
 )
 #NAN_plot<- NAN_plot+coord_flip()
 figure_2<-rbind(ggplotGrob(NAN_plot),size="last")
-ggsave(file="Fig4_PCNA_IHC_box_comparison.pdf",
+ggsave(file="PCNA_IHC_box_comparison.pdf",
        plot=figure_2,bg = 'white', width =6, height =8, units = 'cm', dpi = 600)
 
 used_exp_RAD51 <- as.data.frame(used_exp_IHC[,c(1,2,6)])
@@ -114,7 +114,7 @@ NAN_plot <- NAN_plot +stat_pvalue_manual(
 )
 #NAN_plot<- NAN_plot+coord_flip()
 figure_2<-rbind(ggplotGrob(NAN_plot),size="last")
-ggsave(file="Fig4_RAD51_IHC_box_comparison.pdf",
+ggsave(file="RAD51_IHC_box_comparison.pdf",
        plot=figure_2,bg = 'white', width =6, height =8, units = 'cm', dpi = 600)
 
 used_exp_DNApk <- as.data.frame(used_exp_IHC[,c(1,2,4)])
@@ -149,7 +149,7 @@ NAN_plot <- NAN_plot +stat_pvalue_manual(
 )
 #NAN_plot<- NAN_plot+coord_flip()
 figure_2<-rbind(ggplotGrob(NAN_plot),size="last")
-ggsave(file="Fig4_DNApk_IHC_box_comparison.pdf",
+ggsave(file="DNApk_IHC_box_comparison.pdf",
        plot=figure_2,bg = 'white', width =6, height =8, units = 'cm', dpi = 600)
 
 
@@ -185,5 +185,5 @@ NAN_plot <- NAN_plot +stat_pvalue_manual(
 )
 #NAN_plot<- NAN_plot+coord_flip()
 figure_2<-rbind(ggplotGrob(NAN_plot),size="last")
-ggsave(file="Fig4_rH2AX_IHC_box_comparison.pdf",
+ggsave(file="rH2AX_IHC_box_comparison.pdf",
        plot=figure_2,bg = 'white', width =6, height =8, units = 'cm', dpi = 600)
