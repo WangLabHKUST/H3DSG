@@ -27,7 +27,7 @@ To install the dependent R packages, please refer to the manual of each individu
 For each analysis, the user can enter the directory and run the R code inside the folder. The code will read the demo data provided in the folder, run the analysis, and generate result files within the folder.
 
 ## Raw data availability
-The data generated in this study has been deposited in the [Genome Sequence Archive](https://ngdc.cncb.ac.cn/gsa-human/). The accession number for DNA and RNA sequencing data is HRA008075, and the accession number of the DNA methylation data is OMIX006956.
+The data generated in this study has been deposited in the [Genome Sequence Archive](https://ngdc.cncb.ac.cn/gsa-human/). The accession number for DNA and RNA sequencing data is HRA008075, and the accession number of the DNA methylation data is OMIX006956. The data is not released at the moment but will be released upon publication of the manuscript.
 
 ## Contact
 For any questions, please contact Professor Jiguang Wang via email: jgwang AT ust DOT hk
