@@ -4,10 +4,15 @@ library(rstudioapi)
 current_path = rstudioapi::getActiveDocumentContext()$path 
 setwd(dirname(current_path ))
 print(getwd())
-LOH_index <- read.csv('SP_36_LOH_statistics.csv',header=T)
-LOH_index$group[which(LOH_index$group %in% "YongG")] <- "Group1"
-LOH_index$group[which(LOH_index$group %in% "OldG")] <- "Group2"
-LOH_index$group <- as.factor(LOH_index$group)
+#LOH_index <- read.csv('SP_36_LOH_statistics.csv',header=T)
+#LOH_index$group[which(LOH_index$group %in% "YongG")] <- "Group1"
+#LOH_index$group[which(LOH_index$group %in% "OldG")] <- "Group2"
+#LOH_index$group <- as.factor(LOH_index$group)
+#LOH_index <- LOH_index[,-c(1)]
+#write.table(LOH_index,'LOH_index_plot.txt',sep="\t",
+#            row.names = F,quote=F)
+LOH_index <- read.table('LOH_index_plot.txt',sep="\t",
+                         header=T)
 library(ggplot2)
 library(ggpubr)
 library(ggrepel)
