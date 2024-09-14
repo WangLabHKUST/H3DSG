@@ -2,13 +2,15 @@ rm(list = ls())
 library(rstudioapi)
 current_path = rstudioapi::getActiveDocumentContext()$path 
 setwd(dirname(current_path ))
-print(getwd())
-purity_fra <- read.csv('SP_36_clinic_with_purity_0504.csv',header=T)
+#print(getwd())
+#purity_fra <- read.csv('SP_36_clinic_with_purity_0504.csv',header=T)
 
-purity_data <- purity_fra[,c(2:7)]
-purity_data$final_dec[which(purity_data$final_dec %in% "YongG")] <- "SP_group1"
-purity_data$final_dec[which(purity_data$final_dec %in% "OldG")] <- "SP_group2"
-#write.table(purity_data,'Purity_by_facets.txt',row.names=F,quote=F)
+#purity_data <- purity_fra[,c(2:7)]
+#purity_data$final_dec[which(purity_data$final_dec %in% "YongG")] <- "SP_group1"
+#purity_data$final_dec[which(purity_data$final_dec %in% "OldG")] <- "SP_group2"
+#purity_data <- purity_data[,c(1,3,6)]
+#write.table(purity_data,'Purity_by_facets.txt',row.names=F,quote=F,sep="\t")
+purity_data <-read.table('Purity_by_facets.txt',sep="\t",header=T)
 purity_data$purity <- as.numeric(purity_data$purity)
 library(ggplot2)
 library(ggpubr)
