@@ -11,6 +11,7 @@ figure_height <- 0.28
 size_numer_font_size <- 9
 lwd_number <- 0.2
 
+
 data_info <- as.data.frame(readxl::read_excel('Data_clinical_info.xlsx',sheet=1))
 rownames(data_info) <- data_info[,1]
 data_info <- data_info[,-1]
@@ -98,7 +99,7 @@ colnames(gender_matrix) <- colnames(data_info)
 
 Gender_plot <- Heatmap(gender_matrix,
                        rect_gp = gpar(col = "black", lwd =lwd_number),#'goldenrod1','darkorchid',
-                       col = c( 'coral','cyan4'),#,'steelblue1','sandybrown'
+                       col = c('coral','cyan4'),#,'steelblue1','sandybrown'
                        row_labels = "Sex",#purple3
                        cluster_rows = FALSE,cluster_columns = FALSE,
                        width = unit(figure_width, "cm"),
@@ -219,27 +220,40 @@ col_ha <- HeatmapAnnotation(bar1 = anno_barplot(as.numeric(mut_load_matrix),
                             show_annotation_name = F)
 
 cnvmut_matrix <- (as.matrix(data_info[45:63,]))
-
+cnvmut_matrix <- cnvmut_matrix[-c(8:9),]
 alter_fun = list(
   background = function(x, y, w, h) 
     grid.rect(x, y, w*0.9, h*0.9, gp = gpar(fill = "white", col ="grey30")),
-  NAN1= function(x, y, w, h) 
+  NAN1= function(x, y, w, h)
     grid.rect(x, y, w*0.9, h*0.9, gp = gpar(fill = "white", col = NA)),
-  CNV_Amp = function(x, y, w, h) 
-    grid.rect(x, y, w*0.9, h*0.9, gp = gpar(fill = "red", col = NA)),
-  CNV_Del = function(x, y, w, h) 
-    grid.rect(x, y, w*0.9, h*0.9, gp = gpar(fill = "blue", col = NA)),
-  # red rectangles
+  CNV_Amp = function(x, y, w, h)
+    grid.rect(x, y, w*0.9, h*0.9, gp = gpar(fill = "#d84e58", col = NA)),
+  CNV_Gain=function(x, y, w, h)
+  grid.rect(x, y, w*0.9, h*0.9, gp = gpar(fill = "#f4c3c8", col = NA)),
+  CNV_Del = function(x, y, w, h)
+    grid.rect(x, y, w*0.9, h*0.9, gp = gpar(fill = "#474dec", col = NA)),
+  CNV_Loss = function(x, y, w, h) 
+    grid.rect(x, y, w*0.9, h*0.9, gp = gpar(fill = "#98cce8", col = NA)),
+  CNV_loss = function(x, y, w, h) 
+    grid.rect(x, y, w*0.9, h*0.9, gp = gpar(fill = "#98cce8", col = NA)),
+  
+  #Funct = function(x, y, w, h) 
+  #  grid.rect(x, y, w*0.6, h*0.6, gp = gpar(fill = "seagreen", col = NA)),
+  Focal_Del = function(x, y, w, h) 
+    grid.rect(x, y, w*0.9, h*0.9, gp = gpar(fill = "#474dec", col = NA)),
+  Focal_Amp = function(x, y, w, h) 
+    grid.rect(x, y, w*0.9, h*0.9, gp = gpar(fill = "#d84e58", col = NA)),
+   #red rectangles
   Mut_Missense= function(x, y, w, h) 
-    grid.rect(x, y, w*0.4, h*0.4, gp = gpar(fill = 'black', col = NA)),
+    grid.rect(x, y, w*0.3, h*0.3, gp = gpar(fill = 'black', col = NA)),
   Mut_Frameshift= function(x, y, w, h) 
-    grid.rect(x, y, w*0.4, h*0.4, gp = gpar(fill = 'hotpink1', col = NA)),
+    grid.rect(x, y, w*0.3, h*0.3, gp = gpar(fill = 'hotpink1', col = NA)),
   Mut_Splice= function(x, y, w, h) 
-    grid.rect(x, y, w*0.4, h*0.4, gp = gpar(fill = 'darkorchid', col = NA)),
+    grid.rect(x, y, w*0.3, h*0.3, gp = gpar(fill = 'darkorchid', col = NA)),
   Mut_Stop_gain= function(x, y, w, h) 
-    grid.rect(x, y, w*0.4, h*0.4, gp = gpar(fill = 'darkturquoise', col = NA)),
+    grid.rect(x, y, w*0.3, h*0.3, gp = gpar(fill = 'darkturquoise', col = NA)),
   Mut_Inframe= function(x, y, w, h) 
-    grid.rect(x, y, w*0.4, h*0.4, gp = gpar(fill = 'sienna4', col = NA))#,
+    grid.rect(x, y, w*0.3, h*0.3, gp = gpar(fill = 'sienna4', col = NA))#,
 
 )
 #library(ComplexHeatmap)
@@ -280,13 +294,15 @@ group_sim_plot <- Heatmap(group_matrix,
               labels = c("Group1", "Group2"),ncol=2,border = "black"),
               show_heatmap_legend = T,border = T)
 
+pCNV_mut%v% group_sim_plot
 
 Fig_inter<- WES_plot%v%methy_plot%v%RNA_plot%v%Age_plot%v%Gender_plot%v%surv_states%v%surv_time%v%location%v%loc_sim_plot%v%pCNV_mut%v%group_sim_plot
 
+Fig_inter
 
-pdf('Clinical_and_muational_landscape.pdf',width=15,height = 18)
+pdf('Clinical_and_muational_landscape_focal_CNV.pdf',width=15,height = 18)
 draw(Fig_inter, 
-  ht_gap = unit(0.07, "cm"))
+ ht_gap = unit(0.07, "cm"))
 dev.off()
 
 
