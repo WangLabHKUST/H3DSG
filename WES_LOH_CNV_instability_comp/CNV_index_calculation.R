@@ -3,49 +3,55 @@ rm(list=ls())
 library(rstudioapi)
 current_path = rstudioapi::getActiveDocumentContext()$path 
 setwd(dirname(current_path ))
-library(CINmetrics)
-getwd()
+#library(CINmetrics)
+#getwd()
 
-GAB_seg <- read.table('Group_AB_seg.seg',sep="\t",header=T)
-GAB_seg <- GAB_seg[,c(2:4,6,1)]
-colnames(GAB_seg) <- c("Chromosome","Start","End","Segment_Mean","Sample")
+#GAB_seg <- read.table('Group_AB_seg.seg',sep="\t",header=T)
+#GAB_seg <- GAB_seg[,c(2:4,6,1)]
+#colnames(GAB_seg) <- c("Chromosome","Start","End","Segment_Mean","Sample")
 
-cinmetrics.test_GAB <- CINmetrics(cnvData = GAB_seg)
+#cinmetrics.test_GAB <- CINmetrics(cnvData = GAB_seg)
 
 
 #fraction.genome.test <- fga(cnvData = GAB_seg,segmentMean = 0.1)
-clin_info <- read.csv('SP_36_clinic_with_purity_0504.csv',header=T)
-lab <- rbind()
-for(i in 1:dim(cinmetrics.test_GAB)[1])
-{
-  k1 <- which(paste0('P',clin_info$ID2...2) %in% cinmetrics.test_GAB$sample_id[i])
-  if(length(k1)>0)
-  {
-    lab <- rbind(lab,c(cinmetrics.test_GAB$sample_id[i],
-                       clin_info$final_dec[k1])) 
-  }
-}
-cinmetrics.test_GAB$group <- lab[,2]
-cinmetrics.test_GAB$group[which(cinmetrics.test_GAB$group %in% "YongG")] <- "Group1"
-cinmetrics.test_GAB$group[which(cinmetrics.test_GAB$group %in% "OldG")] <- "Group2"
-lab <- as.data.frame(lab)
-rownames(lab) <- lab[,1]
-modified.tai.test <- taiModified(cnvData = GAB_seg)
-rownames(modified.tai.test) <- modified.tai.test$sample_id
-modified.tai.test <- merge(modified.tai.test,lab,by="row.names",all=T)
-modified.tai.test$modified_tai <- as.numeric(modified.tai.test$modified_tai)
-modified.tai.test$V2[which(modified.tai.test$V2 %in% "YongG")] <- "Group1"
-modified.tai.test$V2[which(modified.tai.test$V2 %in% "OldG")] <- "Group2"
-colnames(modified.tai.test)[5]<- "group"
-modified.tai.test$group <- as.factor(modified.tai.test$group)
+#clin_info <- read.csv('SP_36_clinic_with_purity_0504.csv',header=T)
+#lab <- rbind()
+#for(i in 1:dim(cinmetrics.test_GAB)[1])
+#{
+#  k1 <- which(paste0('P',clin_info$ID2...2) %in% cinmetrics.test_GAB$sample_id[i])
+#  if(length(k1)>0)
+#  {
+#    lab <- rbind(lab,c(cinmetrics.test_GAB$sample_id[i],
+#                       clin_info$final_dec[k1])) 
+#  }
+#}
+#cinmetrics.test_GAB$group <- lab[,2]
+#cinmetrics.test_GAB$group[which(cinmetrics.test_GAB$group %in% "YongG")] <- "Group1"
+#cinmetrics.test_GAB$group[which(cinmetrics.test_GAB$group %in% "OldG")] <- "Group2"
+#lab <- as.data.frame(lab)
+#rownames(lab) <- lab[,1]
+#modified.tai.test <- taiModified(cnvData = GAB_seg)
+#rownames(modified.tai.test) <- modified.tai.test$sample_id
+#modified.tai.test <- merge(modified.tai.test,lab,by="row.names",all=T)
+#modified.tai.test$modified_tai <- as.numeric(modified.tai.test$modified_tai)
+#modified.tai.test$V2[which(modified.tai.test$V2 %in% "YongG")] <- "Group1"
+#modified.tai.test$V2[which(modified.tai.test$V2 %in% "OldG")] <- "Group2"
+#colnames(modified.tai.test)[5]<- "group"
+#modified.tai.test$group <- as.factor(modified.tai.test$group)
 
 
-cinmetrics.test_GAB$tai <- as.numeric(cinmetrics.test_GAB$tai)
-cinmetrics.test_GAB$cna <- as.numeric(cinmetrics.test_GAB$cna)
-cinmetrics.test_GAB$base_segments <- as.numeric(cinmetrics.test_GAB$base_segments)
-cinmetrics.test_GAB$break_points <- as.numeric(cinmetrics.test_GAB$break_points)
-cinmetrics.test_GAB$fga <- as.numeric(cinmetrics.test_GAB$fga)
-cinmetrics.test_GAB$group <- as.factor(cinmetrics.test_GAB$group)
+#cinmetrics.test_GAB$tai <- as.numeric(cinmetrics.test_GAB$tai)
+#cinmetrics.test_GAB$cna <- as.numeric(cinmetrics.test_GAB$cna)
+#cinmetrics.test_GAB$base_segments <- as.numeric(cinmetrics.test_GAB$base_segments)
+#cinmetrics.test_GAB$break_points <- as.numeric(cinmetrics.test_GAB$break_points)
+#cinmetrics.test_GAB$fga <- as.numeric(cinmetrics.test_GAB$fga)
+#cinmetrics.test_GAB$group <- as.factor(cinmetrics.test_GAB$group)
+#cinmetrics.test_GAB <- cinmetrics.test_GAB[,-1]
+#write.table(cinmetrics.test_GAB,'cinmetrics.test_GAB.txt',
+#            sep="\t",row.names = F,quote=F)
+
+cinmetrics.test_GAB <- read.table('cinmetrics.test_GAB.txt',
+                                  sep="\t",header=T)
 library(ggplot2)
 library(ggrepel)
 library(ggpubr)
