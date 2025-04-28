@@ -10,22 +10,21 @@ library(ggplot2)
 library(cowplot)
 library(Seurat)
 
+setwd('~/Documents/Projects/H3DSG/Revision/CXCL14_scTCR/reanalyze/scRNAseq/')
 
 config = list(species = 'h_sapiens',min_cells = 3, min_features = 200,max_mito = NA,
               normalization = 'LogNormalize',var_regress = 'nCount_RNA,percent.mito',
               pcs_compute = 100, pcs_keep = 30, clustering_resolution = 1,seed = 42)
 
 #0. specify the sample_id,  input and output folders
-#primary: BC2, BC3, BC5, BC6, BC16, BC21, BC22
-#metastasis: BC10, BC17
-#recurrence: BC11, BC20
-smplist = c('BC2','BC3','BC5','BC6','BC10','BC11','BC16','BC17','BC20','BC21','BC22')
+
+smplist = c('TCell', 'TCXCL14', 'TNET') 
 for (smp in smplist){
   print(paste('==========',smp,'=========='))
   sample_id = smp
-  cellranger_trio_dir = paste0('~/Documents/Projects/BoneCancer/Data_GEO/GSE152048/',smp)
+  cellranger_trio_dir = paste0('./',smp,'.filtered_feature_bc_matrix/')
   
-  output_dir = paste0('~/Documents/Projects/BoneCancer/Data_GEO/GSE152048/preprocessing/',smp)
+  output_dir = paste0('./',smp)
   dir.create(output_dir,recursive = T)
   #1. read in data
   
@@ -362,5 +361,3 @@ for (smp in smplist){
   save(seurat, file = file.path(output_dir, "seurat.Rda"))
 }
 
-#library(Nebulosa)
-#plot_density(seurat, features = c('PDCD1','CD3D'))
