@@ -1,0 +1,10 @@
+"score","score_label","immune","immune_label","n","spearman_rho","p_value","note","p_adj_bh"
+"tardon_iqm","Tardon hypoxia signature (IQM)","T_NK","T/NK ratio",29,-0.129556650246305,0.502968408334696,NA,0.646673667858894
+"tardon_iqm","Tardon hypoxia signature (IQM)","Myeloid","Myeloid ratio",29,-0.0305418719211823,0.875028365213765,NA,0.875028365213765
+"tardon_iqm","Tardon hypoxia signature (IQM)","immune_total","Immune total (T_NK + Myeloid + Neutrophil + B_cell)",29,-0.0344827586206896,0.859053129407633,NA,0.875028365213765
+"buffa_mean","Buffa hypoxia signature (mean)","T_NK","T/NK ratio",29,-0.354187192118227,0.059418192892222,NA,0.1336909340075
+"buffa_mean","Buffa hypoxia signature (mean)","Myeloid","Myeloid ratio",29,-0.257142857142857,0.178103182137017,NA,0.320585727846631
+"buffa_mean","Buffa hypoxia signature (mean)","immune_total","Immune total (T_NK + Myeloid + Neutrophil + B_cell)",29,-0.187684729064039,0.32958250272836,NA,0.494373754092541
+"ragnum_iqm","Ragnum hypoxia signature (IQM)","T_NK","T/NK ratio",29,-0.522167487684729,0.00366603081484551,NA,0.0329942773336096
+"ragnum_iqm","Ragnum hypoxia signature (IQM)","Myeloid","Myeloid ratio",29,-0.459605911330049,0.0121308115332268,NA,0.0545886518995206
+"ragnum_iqm","Ragnum hypoxia signature (IQM)","immune_total","Immune total (T_NK + Myeloid + Neutrophil + B_cell)",29,-0.397536945812808,0.0327173706302418,NA,0.0981521118907255

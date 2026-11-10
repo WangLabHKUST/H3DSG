@@ -1,0 +1,4 @@
+# Large public data sets, kept locally. Each script says in its header where the file comes from.
+data/HumanSpinalGW4toGW7_GSE171890.integrated.RDS
+data/HumanSpinalGW4toGW7_GSE171890.MetaData.csv
+data/spatial.integrated.RDS

@@ -1,0 +1,25 @@
+scores: data/hypoxia_scores_per_sample.csv
+MRI: raw_data/clinical_table_s1_20260514.xlsx (rows 1-36 only)
+n_samples: 35
+pairwise significance: BH-adjusted p < 0.05
+
+Tumor Enhancement counts (short labels):
+  Focal: 21
+  Lept: 10
+  Without: 4
+
+Kruskal-Wallis (score ~ Tumor Enhancement):
+  tardon_iqm: chi-squared=1.011, p=0.6031 (n=35, k=3)
+  buffa_mean: chi-squared=0.342, p=0.8428 (n=35, k=3)
+  ragnum_iqm: chi-squared=0.06741, p=0.9669 (n=35, k=3)
+
+Pairwise Wilcoxon (BH-adjusted):
+  tardon_iqm | Lept vs Focal: p_adj=1
+  tardon_iqm | Without vs Focal: p_adj=0.7517
+  tardon_iqm | Without vs Lept: p_adj=1
+  buffa_mean | Lept vs Focal: p_adj=0.9159
+  buffa_mean | Without vs Focal: p_adj=0.9159
+  buffa_mean | Without vs Lept: p_adj=0.9159
+  ragnum_iqm | Lept vs Focal: p_adj=1
+  ragnum_iqm | Without vs Focal: p_adj=1
+  ragnum_iqm | Without vs Lept: p_adj=1

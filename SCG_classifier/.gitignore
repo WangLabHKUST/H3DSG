@@ -1,0 +1,33 @@
+# ---------------------------------------------------------------------------
+# What is NOT published, and why.
+#
+# Collaborators get this folder complete: data/ and models/ are present on disk
+# so the pipeline runs out of the box. Only the paths below stay out of the
+# public repository.
+# ---------------------------------------------------------------------------
+
+# Patient-level input. Table S1 itself is published as a supplementary table,
+# but this directory also holds hospital numbers, Sentrix array IDs and the raw
+# beta matrices. 65 MB in total; beta.csv alone is 53 MB.
+data/
+
+# Fitted models. Binary artifacts, and fully reproducible from data/ by
+# 01_train_model.py: GaussianNB/BernoulliNB fitting is closed form, so identical
+# input gives a byte-identical model (md5 6d1190b2 / 68fcd3bc / b9216004 on every
+# rerun we have made).
+models/
+
+# The one result table that carries patient identifiers: hospital numbers
+# (Original_ID, PID), Sentrix IDs (methy_ID) and GEO accessions. Regenerate it
+# locally with code/00d_build_id_summary.py.
+results/id_summary_all_samples.csv
+
+# Everything else is published: code/ (11 scripts), README.md, ID_MAPPING.md and
+# the remaining 7 files in results/ (~97 KB), which carry no identifier beyond
+# the SP IDs used in the paper.
+
+__pycache__/
+*.pyc
+.ipynb_checkpoints/
+.DS_Store
+Thumbs.db

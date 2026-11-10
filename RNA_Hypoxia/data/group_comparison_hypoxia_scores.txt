@@ -1,0 +1,25 @@
+expr_transform: log2(x+1)
+groups: PL vs TL
+n_samples: 36
+
+Tardon_IQM
+n_PL=16 n_TL=20 median_PL=4.0177 median_TL=3.6767 median_diff=0.34099
+Wilcoxon p=0.18644 (95% CI -0.21785, 1.2437) W=202
+Cliff delta (PL vs TL)=0.2625
+
+Buffa_mean
+n_PL=16 n_TL=20 median_PL=5.2249 median_TL=4.6958 median_diff=0.52913
+Wilcoxon p=0.0039625 (95% CI 0.22387, 1.0385) W=251
+Cliff delta (PL vs TL)=0.56875
+
+Ragnum_IQM
+n_PL=16 n_TL=20 median_PL=4.0706 median_TL=2.9851 median_diff=1.0855
+Wilcoxon p=6.459e-05 (95% CI 0.74056, 1.9118) W=286
+Cliff delta (PL vs TL)=0.7875
+
+Spearman correlation:
+           tardon_iqm buffa_mean ragnum_iqm
+tardon_iqm      1.000      0.760      0.545
+buffa_mean      0.760      1.000      0.858
+ragnum_iqm      0.545      0.858      1.000
+

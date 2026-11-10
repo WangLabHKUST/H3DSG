@@ -1,0 +1,15 @@
+cluster,state
+0,CD163+ macrophage
+1,CCL2+ inflammatory macrophage
+2,CX3CR1+ microglia-like
+3,C1QC+ microglia-like
+4,GPNMB+ TAM
+5,stress-activated myeloid
+6,S100A8/A9+ neutrophil
+7,IFN-activated myeloid
+8,artifact
+9_0,FCN1+ inflammatory monocyte
+9_1,AREG+ LYZ+ myeloid
+9_2,CD1C+ dendritic cell
+10,proliferating myeloid
+11,artifact

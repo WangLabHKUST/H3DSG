@@ -1,0 +1,42 @@
+lineage,ref_cluster,family
+CD8,CD8.c01(Tn),Tn
+CD8,CD8.c02(IL7R+ Tm),Tm
+CD8,CD8.c03(uncharacterized),uncharacterized
+CD8,CD8.c04(ZNF683+CXCR6- Tm),Tm
+CD8,CD8.c05(GZMK+ early Tem),Tem
+CD8,CD8.c06(GZMK+ Tem),Tem
+CD8,CD8.c07(Temra),Temra
+CD8,CD8.c08(KIR+EOMES+ NK-like),NK-like
+CD8,CD8.c09(KIR+TXK+ NK-like),NK-like
+CD8,CD8.c10(ZNF683+CXCR6+ Trm),Trm
+CD8,CD8.c11(GZMK+ Tex),Tex
+CD8,CD8.c12(terminal Tex),Tex
+CD8,CD8.c13(OXPHOS- Tex),Tex
+CD8,CD8.c14(TCF7+ Tex),Tex
+CD8,CD8.c15(ISG+ CD8+ T),ISG+
+CD8,CD8.c16(Tc17),Type17
+CD8,CD8.c17(NME1+ T),NME1+
+CD4,CD4.c01(Tn),Tn
+CD4,CD4.c02(CXCR5+ pre-Tfh),Tfh
+CD4,CD4.c03(ADSL+ Tn),Tn
+CD4,CD4.c04(IL7R- Tn),Tn
+CD4,CD4.c05(TNF+ T),Tm
+CD4,CD4.c06(AREG+ Tm),Tm
+CD4,CD4.c07(TIMP1+ Tm),Tm
+CD4,CD4.c08(CREM+ Tm),Tm
+CD4,CD4.c09(CCL5+ Tm),Tm
+CD4,CD4.c10(CAPG+ Tm),Tm
+CD4,CD4.c11(CAPG+CREM- Tm),Tm
+CD4,CD4.c12(GZMK+ Tem),Tem
+CD4,CD4.c13(Temra),Temra
+CD4,CD4.c14(CCR6+ Th17),Type17
+CD4,CD4.c15(IL26+ Th17),Type17
+CD4,CD4.c16(IL21+ Tfh),Tfh
+CD4,CD4.c17(IFNG+ Tfh/Th1),Tfh
+CD4,CD4.c18(TNFRSF9- Treg),Treg
+CD4,CD4.c19(S1PR1+ Treg),Treg
+CD4,CD4.c20(TNFRSF9+ Treg),Treg
+CD4,CD4.c21(ISG+ Treg),Treg
+CD4,CD4.c22(ISG+ Th),ISG+
+CD4,CD4.c23(NME1+CCR4- T),NME1+
+CD4,CD4.c24(NME1+CCR4+ T),NME1+

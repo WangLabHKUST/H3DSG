@@ -1,0 +1,5 @@
+# Raw inputs (BAM, GTF, tables exported from Seurat) and everything a run writes stay out of the repository.
+data/
+results/
+__pycache__/
+*.pyc

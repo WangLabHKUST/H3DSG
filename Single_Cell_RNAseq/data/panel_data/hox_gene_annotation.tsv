@@ -1,0 +1,39 @@
+gene	location_group	order_all_samples	order_multisite
+HOXD11	Thoracic	1	33
+HOXD10	Thoracic	2	30
+HOXD9	Thoracic	3	27
+HOXC11	Thoracic	4	32
+HOXC10	Thoracic	5	29
+HOXC9	Thoracic	6	26
+HOXB9	Thoracic	7	25
+HOXA11	Thoracic	8	31
+HOXA10	Thoracic	9	28
+HOXA9	Thoracic	10	24
+HOXD8	Cervical	11	23
+HOXC8	Cervical	12	22
+HOXC6	Cervical	13	18
+HOXB8	Cervical	14	21
+HOXB7	Cervical	15	20
+HOXB6	Cervical	16	17
+HOXB5	Cervical	17	14
+HOXB4	Cervical	18	10
+HOXB3	Cervical	19	7
+HOXA7	Cervical	20	19
+HOXA6	Cervical	21	16
+HOXA5	Cervical	22	13
+HOXA4	Cervical	23	9
+HOXD1	Brainstem	24	3
+HOXC4	Brainstem	25	11
+HOXB2	Brainstem	26	5
+HOXA1	Brainstem	27	1
+ZIC3	Thalamus	28	
+ZIC1	Thalamus	29	
+ZIC4	Thalamus	30	
+OTX1	Thalamus	31	
+HOXA2			4
+HOXA3			6
+HOXD3			8
+HOXD4			12
+HOXC5			15
+HOXA13			36
+HOXD13			39

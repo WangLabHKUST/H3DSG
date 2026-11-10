@@ -1,0 +1,10 @@
+"group1","group2","p_adj_bh","score","significant_bh"
+"Lept","Focal",1,"tardon_iqm",FALSE
+"Without","Focal",0.751746570016775,"tardon_iqm",FALSE
+"Without","Lept",1,"tardon_iqm",FALSE
+"Lept","Focal",0.915864589487722,"buffa_mean",FALSE
+"Without","Focal",0.915864589487722,"buffa_mean",FALSE
+"Without","Lept",0.915864589487722,"buffa_mean",FALSE
+"Lept","Focal",1,"ragnum_iqm",FALSE
+"Without","Focal",1,"ragnum_iqm",FALSE
+"Without","Lept",1,"ragnum_iqm",FALSE

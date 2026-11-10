@@ -1,0 +1,8 @@
+"sample","SP","gene","n_variants","drawn_type","drawn_color","triangle_type","triangle_color","variants"
+"P12","SP12","TP53",2,"Mut_Stop_gain","#000000","Mut_Missense","#00CED1","R209W Missense (7674221, VAF 61%); Q278* Stop_gain (7673579, VAF 48%)"
+"P18","SP18","TP53",2,"Mut_Missense","#00CED1",NA,NA,"R209Q Missense (7674220, VAF 30%); S202A Missense (7674242, VAF 22%)"
+"P29","SP29","PPM1D",2,"Mut_Frameshift","#8B4726","Mut_Missense","#00CED1","N448 Frameshift (60663077, VAF 35%); L450F Missense (60663084, VAF 55%)"
+"P21","SP21","NF1",2,"Mut_Stop_gain","#000000","Mut_Missense","#00CED1","Q347* Stop_gain (31200572, VAF 22%); N201S Missense (31295730, VAF 43%)"
+"P26","SP26","NF1",2,"Mut_Frameshift","#8B4726",NA,NA,"T676T? Frameshift (31226459, VAF 42%); L6L? Frameshift (31296313, VAF 34%)"
+"P29","SP29","NF1",2,"Mut_Stop_gain","#000000","Mut_Frameshift","#8B4726","QVLI2288 Frameshift (31338746, VAF 38%); R304* Stop_gain (31200443, VAF 24%)"
+"P30","SP30","ATRX",2,"Mut_Frameshift","#8B4726","Mut_Missense","#00CED1","K82K? Frameshift (77696700, VAF 36%); H1805D Missense (77618841, VAF 25%)"

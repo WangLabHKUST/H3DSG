@@ -1,0 +1,6 @@
+subset,n,TL (model),PL (model),NA (model),TL (Table S1),PL (Table S1),NA (Table S1),n_changed
+All samples,86,48,38,0,48,38,0,0
+Discovery,36,20,16,0,20,16,0,0
+Validation,50,28,22,0,28,22,0,0
+Validation / GSE270993,13,6,7,0,6,7,0,0
+Validation / Newly_collected,37,22,15,0,22,15,0,0

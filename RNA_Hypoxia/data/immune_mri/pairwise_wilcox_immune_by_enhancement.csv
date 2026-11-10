@@ -1,0 +1,10 @@
+"group1","group2","p_adj_bh","immune","significant_bh"
+"Lept","Focal",0.0338209647105492,"T_NK",TRUE
+"Without","Focal",0.13550638760948,"T_NK",FALSE
+"Without","Lept",0.609834043673459,"T_NK",FALSE
+"Lept","Focal",0.838437033462646,"Myeloid",FALSE
+"Without","Focal",0.838437033462646,"Myeloid",FALSE
+"Without","Lept",0.838437033462646,"Myeloid",FALSE
+"Lept","Focal",0.884207221812355,"immune_total",FALSE
+"Without","Focal",0.884207221812355,"immune_total",FALSE
+"Without","Lept",0.884207221812355,"immune_total",FALSE

@@ -1,0 +1,33 @@
+# Raw inputs: the bulk TPM matrix, the clinical table (patient-level MRI data),
+# the mIHC cell-type proportions, the ID map and the published signature
+# supplement. Archive version only, never committed.
+raw_data/
+
+# The same tables as data/, but with the PID / Original_ID columns kept. The
+# committed copies in data/ carry the SP01..SP36 sample ids only.
+data_full/
+
+# Scratch
+logs/
+results/
+
+# The PDFs and PNGs under figures/ are committed **on purpose**: every one is
+# redrawn from the small tables in data/ by the four scripts in that directory,
+# so a reader sees the figures without needing the raw data.
+
+# Large binaries are never committed
+*.h5ad
+*.h5
+*.npy
+*.rds
+*.Rda
+*.RData
+
+# Scratch and environment
+.Rhistory
+.Rproj.user/
+Rplots.pdf
+__pycache__/
+*.pyc
+.DS_Store
+Thumbs.db

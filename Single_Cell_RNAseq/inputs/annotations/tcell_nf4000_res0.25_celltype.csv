@@ -1,0 +1,11 @@
+cluster,celltype
+0,CD8 T
+1,memory T
+2,CD56-CD16+ NK
+3,Naive T
+4,IFN
+5,CD56+CD16- NK
+6,Treg
+7,Prolif
+8,Stress T
+9,CD8 T

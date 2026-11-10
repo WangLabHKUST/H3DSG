@@ -1,0 +1,226 @@
+sid	renamed_id	group	patient_id	category	n	fraction
+PL_1	PL_1	PL	SP38	AREG+ LYZ+ myeloid	27	0.028602
+PL_1	PL_1	PL	SP38	C1QC+ microglia-like	138	0.146186
+PL_1	PL_1	PL	SP38	CCL2+ inflammatory macrophage	119	0.126059
+PL_1	PL_1	PL	SP38	CD163+ macrophage	299	0.316737
+PL_1	PL_1	PL	SP38	CD1C+ dendritic cell	6	0.006356
+PL_1	PL_1	PL	SP38	CX3CR1+ microglia-like	49	0.051907
+PL_1	PL_1	PL	SP38	FCN1+ inflammatory monocyte	12	0.012712
+PL_1	PL_1	PL	SP38	GPNMB+ TAM	103	0.10911
+PL_1	PL_1	PL	SP38	IFN-activated myeloid	42	0.044492
+PL_1	PL_1	PL	SP38	proliferating myeloid	21	0.022246
+PL_1	PL_1	PL	SP38	S100A8/A9+ neutrophil	108	0.114407
+PL_1	PL_1	PL	SP38	stress-activated myeloid	20	0.021186
+PL_10	PL_10	PL	SP70	AREG+ LYZ+ myeloid	2	0.000721
+PL_10	PL_10	PL	SP70	C1QC+ microglia-like	60	0.021637
+PL_10	PL_10	PL	SP70	CCL2+ inflammatory macrophage	1397	0.503787
+PL_10	PL_10	PL	SP70	CD163+ macrophage	263	0.094843
+PL_10	PL_10	PL	SP70	CD1C+ dendritic cell	1	0.000361
+PL_10	PL_10	PL	SP70	CX3CR1+ microglia-like	142	0.051208
+PL_10	PL_10	PL	SP70	FCN1+ inflammatory monocyte	14	0.005049
+PL_10	PL_10	PL	SP70	GPNMB+ TAM	409	0.147494
+PL_10	PL_10	PL	SP70	IFN-activated myeloid	51	0.018392
+PL_10	PL_10	PL	SP70	proliferating myeloid	29	0.010458
+PL_10	PL_10	PL	SP70	S100A8/A9+ neutrophil	250	0.090155
+PL_10	PL_10	PL	SP70	stress-activated myeloid	155	0.055896
+PL_11	PL_11	PL	SP71	AREG+ LYZ+ myeloid	2	0.004587
+PL_11	PL_11	PL	SP71	C1QC+ microglia-like	81	0.18578
+PL_11	PL_11	PL	SP71	CCL2+ inflammatory macrophage	82	0.188073
+PL_11	PL_11	PL	SP71	CD163+ macrophage	43	0.098624
+PL_11	PL_11	PL	SP71	CD1C+ dendritic cell	2	0.004587
+PL_11	PL_11	PL	SP71	CX3CR1+ microglia-like	25	0.057339
+PL_11	PL_11	PL	SP71	FCN1+ inflammatory monocyte	2	0.004587
+PL_11	PL_11	PL	SP71	GPNMB+ TAM	36	0.082569
+PL_11	PL_11	PL	SP71	IFN-activated myeloid	10	0.022936
+PL_11	PL_11	PL	SP71	proliferating myeloid	5	0.011468
+PL_11	PL_11	PL	SP71	S100A8/A9+ neutrophil	104	0.238532
+PL_11	PL_11	PL	SP71	stress-activated myeloid	44	0.100917
+PL_2	PL_2	PL	SP10	AREG+ LYZ+ myeloid	6	0.006091
+PL_2	PL_2	PL	SP10	C1QC+ microglia-like	107	0.108629
+PL_2	PL_2	PL	SP10	CCL2+ inflammatory macrophage	88	0.08934
+PL_2	PL_2	PL	SP10	CD163+ macrophage	153	0.15533
+PL_2	PL_2	PL	SP10	CD1C+ dendritic cell	2	0.00203
+PL_2	PL_2	PL	SP10	CX3CR1+ microglia-like	36	0.036548
+PL_2	PL_2	PL	SP10	FCN1+ inflammatory monocyte	50	0.050761
+PL_2	PL_2	PL	SP10	GPNMB+ TAM	116	0.117766
+PL_2	PL_2	PL	SP10	IFN-activated myeloid	37	0.037563
+PL_2	PL_2	PL	SP10	proliferating myeloid	15	0.015228
+PL_2	PL_2	PL	SP10	S100A8/A9+ neutrophil	340	0.345178
+PL_2	PL_2	PL	SP10	stress-activated myeloid	35	0.035533
+PL_3	PL_3	PL	SP04	AREG+ LYZ+ myeloid	1	0.000633
+PL_3	PL_3	PL	SP04	C1QC+ microglia-like	272	0.172152
+PL_3	PL_3	PL	SP04	CCL2+ inflammatory macrophage	354	0.224051
+PL_3	PL_3	PL	SP04	CD163+ macrophage	197	0.124684
+PL_3	PL_3	PL	SP04	CD1C+ dendritic cell	1	0.000633
+PL_3	PL_3	PL	SP04	CX3CR1+ microglia-like	180	0.113924
+PL_3	PL_3	PL	SP04	FCN1+ inflammatory monocyte	7	0.00443
+PL_3	PL_3	PL	SP04	GPNMB+ TAM	203	0.128481
+PL_3	PL_3	PL	SP04	IFN-activated myeloid	46	0.029114
+PL_3	PL_3	PL	SP04	proliferating myeloid	9	0.005696
+PL_3	PL_3	PL	SP04	S100A8/A9+ neutrophil	22	0.013924
+PL_3	PL_3	PL	SP04	stress-activated myeloid	288	0.182278
+PL_4	PL_4	PL	SP03	AREG+ LYZ+ myeloid	1	0.00097
+PL_4	PL_4	PL	SP03	C1QC+ microglia-like	186	0.180407
+PL_4	PL_4	PL	SP03	CCL2+ inflammatory macrophage	227	0.220175
+PL_4	PL_4	PL	SP03	CD163+ macrophage	60	0.058196
+PL_4	PL_4	PL	SP03	CX3CR1+ microglia-like	45	0.043647
+PL_4	PL_4	PL	SP03	FCN1+ inflammatory monocyte	10	0.009699
+PL_4	PL_4	PL	SP03	GPNMB+ TAM	148	0.14355
+PL_4	PL_4	PL	SP03	IFN-activated myeloid	10	0.009699
+PL_4	PL_4	PL	SP03	proliferating myeloid	18	0.017459
+PL_4	PL_4	PL	SP03	S100A8/A9+ neutrophil	243	0.235694
+PL_4	PL_4	PL	SP03	stress-activated myeloid	83	0.080504
+PL_5	PL_5	PL	SP02	AREG+ LYZ+ myeloid	6	0.00113
+PL_5	PL_5	PL	SP02	C1QC+ microglia-like	132	0.024868
+PL_5	PL_5	PL	SP02	CCL2+ inflammatory macrophage	2040	0.384326
+PL_5	PL_5	PL	SP02	CD163+ macrophage	695	0.130934
+PL_5	PL_5	PL	SP02	CD1C+ dendritic cell	9	0.001696
+PL_5	PL_5	PL	SP02	CX3CR1+ microglia-like	1409	0.265448
+PL_5	PL_5	PL	SP02	FCN1+ inflammatory monocyte	14	0.002638
+PL_5	PL_5	PL	SP02	GPNMB+ TAM	715	0.134702
+PL_5	PL_5	PL	SP02	IFN-activated myeloid	151	0.028448
+PL_5	PL_5	PL	SP02	proliferating myeloid	3	0.000565
+PL_5	PL_5	PL	SP02	S100A8/A9+ neutrophil	107	0.020158
+PL_5	PL_5	PL	SP02	stress-activated myeloid	27	0.005087
+PL_6_4	PL_9	PL	SP72	C1QC+ microglia-like	12	0.144578
+PL_6_4	PL_9	PL	SP72	CCL2+ inflammatory macrophage	8	0.096386
+PL_6_4	PL_9	PL	SP72	CD163+ macrophage	4	0.048193
+PL_6_4	PL_9	PL	SP72	CD1C+ dendritic cell	1	0.012048
+PL_6_4	PL_9	PL	SP72	CX3CR1+ microglia-like	6	0.072289
+PL_6_4	PL_9	PL	SP72	FCN1+ inflammatory monocyte	4	0.048193
+PL_6_4	PL_9	PL	SP72	GPNMB+ TAM	12	0.144578
+PL_6_4	PL_9	PL	SP72	IFN-activated myeloid	2	0.024096
+PL_6_4	PL_9	PL	SP72	proliferating myeloid	3	0.036145
+PL_6_4	PL_9	PL	SP72	S100A8/A9+ neutrophil	31	0.373494
+TL_1	TL_1	TL	SP29	AREG+ LYZ+ myeloid	2	0.001963
+TL_1	TL_1	TL	SP29	C1QC+ microglia-like	222	0.217861
+TL_1	TL_1	TL	SP29	CCL2+ inflammatory macrophage	148	0.14524
+TL_1	TL_1	TL	SP29	CD163+ macrophage	289	0.283611
+TL_1	TL_1	TL	SP29	CD1C+ dendritic cell	8	0.007851
+TL_1	TL_1	TL	SP29	CX3CR1+ microglia-like	97	0.095191
+TL_1	TL_1	TL	SP29	FCN1+ inflammatory monocyte	15	0.01472
+TL_1	TL_1	TL	SP29	GPNMB+ TAM	72	0.070658
+TL_1	TL_1	TL	SP29	IFN-activated myeloid	38	0.037291
+TL_1	TL_1	TL	SP29	proliferating myeloid	5	0.004907
+TL_1	TL_1	TL	SP29	S100A8/A9+ neutrophil	39	0.038273
+TL_1	TL_1	TL	SP29	stress-activated myeloid	84	0.082434
+TL_6_5	TL_10	TL	SP73	AREG+ LYZ+ myeloid	5	0.002698
+TL_6_5	TL_10	TL	SP73	C1QC+ microglia-like	225	0.121425
+TL_6_5	TL_10	TL	SP73	CCL2+ inflammatory macrophage	647	0.349164
+TL_6_5	TL_10	TL	SP73	CD163+ macrophage	104	0.056125
+TL_6_5	TL_10	TL	SP73	CD1C+ dendritic cell	1	0.00054
+TL_6_5	TL_10	TL	SP73	CX3CR1+ microglia-like	343	0.185105
+TL_6_5	TL_10	TL	SP73	FCN1+ inflammatory monocyte	3	0.001619
+TL_6_5	TL_10	TL	SP73	GPNMB+ TAM	152	0.082029
+TL_6_5	TL_10	TL	SP73	IFN-activated myeloid	25	0.013492
+TL_6_5	TL_10	TL	SP73	proliferating myeloid	54	0.029142
+TL_6_5	TL_10	TL	SP73	S100A8/A9+ neutrophil	93	0.050189
+TL_6_5	TL_10	TL	SP73	stress-activated myeloid	201	0.108473
+TL_11	TL_11	TL	SP68	AREG+ LYZ+ myeloid	19	0.004031
+TL_11	TL_11	TL	SP68	C1QC+ microglia-like	403	0.08549
+TL_11	TL_11	TL	SP68	CCL2+ inflammatory macrophage	303	0.064277
+TL_11	TL_11	TL	SP68	CD163+ macrophage	2704	0.573611
+TL_11	TL_11	TL	SP68	CD1C+ dendritic cell	24	0.005091
+TL_11	TL_11	TL	SP68	CX3CR1+ microglia-like	176	0.037336
+TL_11	TL_11	TL	SP68	FCN1+ inflammatory monocyte	16	0.003394
+TL_11	TL_11	TL	SP68	GPNMB+ TAM	203	0.043063
+TL_11	TL_11	TL	SP68	IFN-activated myeloid	86	0.018244
+TL_11	TL_11	TL	SP68	proliferating myeloid	9	0.001909
+TL_11	TL_11	TL	SP68	S100A8/A9+ neutrophil	312	0.066186
+TL_11	TL_11	TL	SP68	stress-activated myeloid	459	0.09737
+TL_2	TL_2	TL	SP32	AREG+ LYZ+ myeloid	14	0.005323
+TL_2	TL_2	TL	SP32	C1QC+ microglia-like	400	0.152091
+TL_2	TL_2	TL	SP32	CCL2+ inflammatory macrophage	333	0.126616
+TL_2	TL_2	TL	SP32	CD163+ macrophage	1259	0.478707
+TL_2	TL_2	TL	SP32	CD1C+ dendritic cell	8	0.003042
+TL_2	TL_2	TL	SP32	CX3CR1+ microglia-like	247	0.093916
+TL_2	TL_2	TL	SP32	FCN1+ inflammatory monocyte	8	0.003042
+TL_2	TL_2	TL	SP32	GPNMB+ TAM	192	0.073004
+TL_2	TL_2	TL	SP32	IFN-activated myeloid	53	0.020152
+TL_2	TL_2	TL	SP32	proliferating myeloid	10	0.003802
+TL_2	TL_2	TL	SP32	S100A8/A9+ neutrophil	22	0.008365
+TL_2	TL_2	TL	SP32	stress-activated myeloid	84	0.031939
+TL_3	TL_3	TL	SP50	AREG+ LYZ+ myeloid	11	0.00399
+TL_3	TL_3	TL	SP50	C1QC+ microglia-like	322	0.116794
+TL_3	TL_3	TL	SP50	CCL2+ inflammatory macrophage	805	0.291984
+TL_3	TL_3	TL	SP50	CD163+ macrophage	256	0.092855
+TL_3	TL_3	TL	SP50	CD1C+ dendritic cell	3	0.001088
+TL_3	TL_3	TL	SP50	CX3CR1+ microglia-like	535	0.194052
+TL_3	TL_3	TL	SP50	FCN1+ inflammatory monocyte	4	0.001451
+TL_3	TL_3	TL	SP50	GPNMB+ TAM	178	0.064563
+TL_3	TL_3	TL	SP50	IFN-activated myeloid	91	0.033007
+TL_3	TL_3	TL	SP50	proliferating myeloid	65	0.023576
+TL_3	TL_3	TL	SP50	S100A8/A9+ neutrophil	82	0.029742
+TL_3	TL_3	TL	SP50	stress-activated myeloid	405	0.146899
+TL_4	TL_4	TL	SP22	AREG+ LYZ+ myeloid	8	0.002535
+TL_4	TL_4	TL	SP22	C1QC+ microglia-like	311	0.098542
+TL_4	TL_4	TL	SP22	CCL2+ inflammatory macrophage	769	0.243663
+TL_4	TL_4	TL	SP22	CD163+ macrophage	451	0.142902
+TL_4	TL_4	TL	SP22	CD1C+ dendritic cell	5	0.001584
+TL_4	TL_4	TL	SP22	CX3CR1+ microglia-like	783	0.248099
+TL_4	TL_4	TL	SP22	FCN1+ inflammatory monocyte	6	0.001901
+TL_4	TL_4	TL	SP22	GPNMB+ TAM	201	0.063688
+TL_4	TL_4	TL	SP22	IFN-activated myeloid	68	0.021546
+TL_4	TL_4	TL	SP22	proliferating myeloid	44	0.013942
+TL_4	TL_4	TL	SP22	S100A8/A9+ neutrophil	59	0.018695
+TL_4	TL_4	TL	SP22	stress-activated myeloid	451	0.142902
+TL_5	TL_5	TL	SP30	AREG+ LYZ+ myeloid	48	0.010634
+TL_5	TL_5	TL	SP30	C1QC+ microglia-like	593	0.131369
+TL_5	TL_5	TL	SP30	CCL2+ inflammatory macrophage	769	0.170359
+TL_5	TL_5	TL	SP30	CD163+ macrophage	1376	0.304829
+TL_5	TL_5	TL	SP30	CD1C+ dendritic cell	9	0.001994
+TL_5	TL_5	TL	SP30	CX3CR1+ microglia-like	570	0.126274
+TL_5	TL_5	TL	SP30	FCN1+ inflammatory monocyte	5	0.001108
+TL_5	TL_5	TL	SP30	GPNMB+ TAM	456	0.101019
+TL_5	TL_5	TL	SP30	IFN-activated myeloid	99	0.021932
+TL_5	TL_5	TL	SP30	proliferating myeloid	47	0.010412
+TL_5	TL_5	TL	SP30	S100A8/A9+ neutrophil	104	0.023039
+TL_5	TL_5	TL	SP30	stress-activated myeloid	438	0.097031
+TL_6_1	TL_6	TL	SP73	AREG+ LYZ+ myeloid	2	0.001818
+TL_6_1	TL_6	TL	SP73	C1QC+ microglia-like	222	0.201818
+TL_6_1	TL_6	TL	SP73	CCL2+ inflammatory macrophage	137	0.124545
+TL_6_1	TL_6	TL	SP73	CD163+ macrophage	254	0.230909
+TL_6_1	TL_6	TL	SP73	CD1C+ dendritic cell	6	0.005455
+TL_6_1	TL_6	TL	SP73	CX3CR1+ microglia-like	170	0.154545
+TL_6_1	TL_6	TL	SP73	FCN1+ inflammatory monocyte	13	0.011818
+TL_6_1	TL_6	TL	SP73	GPNMB+ TAM	98	0.089091
+TL_6_1	TL_6	TL	SP73	IFN-activated myeloid	35	0.031818
+TL_6_1	TL_6	TL	SP73	proliferating myeloid	3	0.002727
+TL_6_1	TL_6	TL	SP73	S100A8/A9+ neutrophil	86	0.078182
+TL_6_1	TL_6	TL	SP73	stress-activated myeloid	74	0.067273
+TL_6_2	TL_7	TL	SP73	AREG+ LYZ+ myeloid	7	0.005587
+TL_6_2	TL_7	TL	SP73	C1QC+ microglia-like	290	0.231445
+TL_6_2	TL_7	TL	SP73	CCL2+ inflammatory macrophage	120	0.09577
+TL_6_2	TL_7	TL	SP73	CD163+ macrophage	420	0.335196
+TL_6_2	TL_7	TL	SP73	CD1C+ dendritic cell	7	0.005587
+TL_6_2	TL_7	TL	SP73	CX3CR1+ microglia-like	99	0.07901
+TL_6_2	TL_7	TL	SP73	FCN1+ inflammatory monocyte	3	0.002394
+TL_6_2	TL_7	TL	SP73	GPNMB+ TAM	132	0.105347
+TL_6_2	TL_7	TL	SP73	IFN-activated myeloid	27	0.021548
+TL_6_2	TL_7	TL	SP73	proliferating myeloid	5	0.00399
+TL_6_2	TL_7	TL	SP73	S100A8/A9+ neutrophil	83	0.066241
+TL_6_2	TL_7	TL	SP73	stress-activated myeloid	60	0.047885
+TL_6_3	TL_8	TL	SP73	AREG+ LYZ+ myeloid	5	0.002444
+TL_6_3	TL_8	TL	SP73	C1QC+ microglia-like	665	0.325024
+TL_6_3	TL_8	TL	SP73	CCL2+ inflammatory macrophage	161	0.07869
+TL_6_3	TL_8	TL	SP73	CD163+ macrophage	411	0.20088
+TL_6_3	TL_8	TL	SP73	CD1C+ dendritic cell	12	0.005865
+TL_6_3	TL_8	TL	SP73	CX3CR1+ microglia-like	163	0.079668
+TL_6_3	TL_8	TL	SP73	FCN1+ inflammatory monocyte	38	0.018573
+TL_6_3	TL_8	TL	SP73	GPNMB+ TAM	332	0.162268
+TL_6_3	TL_8	TL	SP73	IFN-activated myeloid	51	0.024927
+TL_6_3	TL_8	TL	SP73	proliferating myeloid	7	0.003421
+TL_6_3	TL_8	TL	SP73	S100A8/A9+ neutrophil	91	0.044477
+TL_6_3	TL_8	TL	SP73	stress-activated myeloid	110	0.053763
+TL_6_4	TL_9	TL	SP73	AREG+ LYZ+ myeloid	3	0.002157
+TL_6_4	TL_9	TL	SP73	C1QC+ microglia-like	216	0.155284
+TL_6_4	TL_9	TL	SP73	CCL2+ inflammatory macrophage	278	0.199856
+TL_6_4	TL_9	TL	SP73	CD163+ macrophage	189	0.135873
+TL_6_4	TL_9	TL	SP73	CD1C+ dendritic cell	6	0.004313
+TL_6_4	TL_9	TL	SP73	CX3CR1+ microglia-like	296	0.212797
+TL_6_4	TL_9	TL	SP73	FCN1+ inflammatory monocyte	8	0.005751
+TL_6_4	TL_9	TL	SP73	GPNMB+ TAM	186	0.133717
+TL_6_4	TL_9	TL	SP73	IFN-activated myeloid	27	0.01941
+TL_6_4	TL_9	TL	SP73	proliferating myeloid	8	0.005751
+TL_6_4	TL_9	TL	SP73	S100A8/A9+ neutrophil	75	0.053918
+TL_6_4	TL_9	TL	SP73	stress-activated myeloid	99	0.071172

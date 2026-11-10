@@ -1,0 +1,121 @@
+panel,gene,direction,source
+Tn,CCR7,+,canonical
+Tn,SELL,+,canonical
+Tn,TCF7,+,canonical
+Tn,LEF1,+,canonical
+Tn,GZMK,-,canonical
+Tn,GZMB,-,canonical
+Tn,PDCD1,-,canonical
+Tm,IL7R,+,canonical
+Tm,ANXA1,+,Zheng2021 Table S2
+Tm,GPR183,+,Zheng2021 Table S2
+Tm,KLF2,+,canonical
+Tm,S1PR1,+,canonical
+Tm,GZMB,-,canonical
+Tem,GZMK,+,canonical
+Tem,EOMES,+,canonical
+Tem,CCL5,+,canonical
+Tem,CCR7,-,canonical
+Temra,CX3CR1,+,canonical
+Temra,FGFBP2,+,canonical
+Temra,GZMH,+,canonical
+Temra,GZMB,+,canonical
+Temra,PRF1,+,canonical
+Temra,KLRG1,+,canonical
+Temra,IL7R,-,canonical
+Temra,GZMK,-,canonical
+Trm,ZNF683,+,canonical
+Trm,CXCR6,+,canonical
+Trm,ITGA1,+,canonical
+Trm,ITGAE,+,canonical
+Trm,CD69,+,canonical
+Trm,KLF2,-,canonical
+Trm,S1PR1,-,canonical
+Tex,PDCD1,+,canonical
+Tex,HAVCR2,+,canonical
+Tex,TOX,+,canonical
+Tex,LAG3,+,canonical
+Tex,TIGIT,+,canonical
+Tex,ENTPD1,+,canonical
+Tex,LAYN,+,Zheng2021 Table S2
+Tex,CXCL13,+,canonical
+Tex,TCF7,-,canonical
+Tex,IL7R,-,canonical
+NK-like,KIR2DL3,+,Zheng2021 Table S2
+NK-like,KIR3DL2,+,Zheng2021 Table S2
+NK-like,KIR2DL4,+,Zheng2021 Table S2
+NK-like,KLRC2,+,Zheng2021 Table S2
+NK-like,TYROBP,+,canonical
+NK-like,KLRF1,+,canonical
+ISG+,ISG15,+,canonical
+ISG+,IFIT1,+,canonical
+ISG+,IFIT3,+,canonical
+ISG+,MX1,+,canonical
+ISG+,IFI6,+,canonical
+ISG+,RSAD2,+,canonical
+Type17,RORC,+,canonical
+Type17,KLRB1,+,canonical
+Type17,IL23R,+,canonical
+Type17,CCR6,+,canonical
+Type17,SLC4A10,+,Zheng2021 Table S2
+Type17,ZBTB16,+,Zheng2021 Table S2
+Tfh,CXCR5,+,canonical
+Tfh,CXCL13,+,canonical
+Tfh,PDCD1,+,canonical
+Tfh,ICOS,+,canonical
+Tfh,BCL6,+,canonical
+Tfh,TOX2,+,Zheng2021 Table S2
+Treg,FOXP3,+,canonical
+Treg,IL2RA,+,canonical
+Treg,CTLA4,+,canonical
+Treg,IKZF2,+,canonical
+Treg,RTKN2,+,Zheng2021 Table S2
+NME1+,NME1,+,Zheng2021 Table S2
+NME1+,ENO1,+,Zheng2021 Table S2
+NME1+,MYB,+,Zheng2021 Table S2
+NME1+,HMGA1,+,Zheng2021 Table S2
+Prolif,MKI67,+,canonical
+Prolif,TOP2A,+,canonical
+Prolif,TYMS,+,canonical
+Prolif,STMN1,+,canonical
+Stress,HSPA1A,+,canonical
+Stress,HSPA1B,+,canonical
+Stress,DNAJB1,+,canonical
+Stress,HSPH1,+,canonical
+NK,NCAM1,+,canonical
+NK,FCGR3A,+,canonical
+NK,KLRF1,+,canonical
+NK,NCR1,+,canonical
+NK,CD3E,-,canonical
+NK,CD3D,-,canonical
+innate_like,ZBTB16,+,canonical
+innate_like,SLC4A10,+,canonical
+innate_like,TRDC,+,canonical
+innate_like,TRGC1,+,canonical
+innate_like,TRDV2,+,canonical
+innate_like,TRGV9,+,canonical
+contam_myeloid,LYZ,+,canonical
+contam_myeloid,S100A8,+,canonical
+contam_myeloid,S100A9,+,canonical
+contam_myeloid,CD14,+,canonical
+contam_myeloid,CD68,+,canonical
+contam_myeloid,C1QA,+,canonical
+contam_myeloid,C1QB,+,canonical
+contam_myeloid,MNDA,+,canonical
+contam_myeloid,AQP9,+,canonical
+contam_glial_tumor,PTPRZ1,+,canonical
+contam_glial_tumor,SOX2,+,canonical
+contam_glial_tumor,OLIG1,+,canonical
+contam_glial_tumor,OLIG2,+,canonical
+contam_glial_tumor,GFAP,+,canonical
+contam_glial_tumor,CHI3L1,+,canonical
+contam_glial_tumor,SERPINA3,+,canonical
+contam_glial_tumor,BCAN,+,canonical
+contam_glial_tumor,PDGFRA,+,canonical
+contam_glial_tumor,APOD,+,canonical
+contam_glial_tumor,PLP1,+,canonical
+contam_B_plasma,MS4A1,+,canonical
+contam_B_plasma,CD79A,+,canonical
+contam_B_plasma,IGHG1,+,canonical
+contam_B_plasma,IGKC,+,canonical
+contam_B_plasma,JCHAIN,+,canonical

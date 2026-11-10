@@ -1,0 +1,41 @@
+# Applies to the whole repository; each analysis folder may have its own .gitignore.
+__pycache__/
+*.pyc
+.DS_Store
+.Rhistory
+.RData
+.Rproj.user/
+Rplots.pdf
+
+# Figure READMEs are working notes
+**/figures/README.md
+
+# Large object used by CXCL14_scTCR, available on request
+CXCL14_scTCR/scRNAseq/seurat_joint.harmony.Rda
+
+# Local environment
+env/
+.venv/
+venv/
+
+# Heavy analysis artifacts (not for git history)
+Single_Cell_RNAseq/objects/
+Single_Cell_RNAseq/results/infercnv/
+Single_Cell_RNAseq/inputs/hox/location_objects_full.rds
+CODEX_Analysis/raw_data/
+CODEX_Analysis/data_full/
+Cell_of_Origin/data/
+velocity_pipeline_TL6/results/s3_h5ad/
+velocity_pipeline_TL6/results/s4_velocity/
+
+# Large binary outputs
+*.rds
+*.RDS
+*.Rda
+*.h5ad
+*.npy
+*.parquet
+
+# Logs
+*.log
+**/logs/

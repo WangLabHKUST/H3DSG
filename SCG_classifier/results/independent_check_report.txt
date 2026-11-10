@@ -1,0 +1,74 @@
+Independent check, run 2026-10-02 17:48
+Table S1: D:\local_storage\Work\SingleCell\archive\data\0916_tables\Table S1.xlsx
+raw validation beta: D:\local_storage\Work\SingleCell\20250609_classifier\val_data
+
+== M0  inputs: does the archive use the latest Table S1?
+  files in the collaborator folder (oldest -> newest): Table S3(1).xlsx [2026-09-16 11:06]; Table S4_1.xlsx [2026-09-16 11:12]; Table S5_2.xlsx [2026-09-16 11:12]; Table S1.xlsx [2026-09-16 11:15]
+[PASS] M0.1 archive data/Table S1.xlsx has the same content as the collaborator file (header, row order, every cell)
+        md5 b88e8a3bcc5b70d0fa67869424d1051e (collaborator, 2026-09-16 11:15) vs b88e8a3bcc5b70d0fa67869424d1051e (archive), byte-identical; files in that folder modified later: none
+[PASS] M0.2 Table S1 layout
+        86 rows, IDs SP01..SP86 gap-free, Discovery == SP01-SP36, 50 Validation
+
+== M1  identity: which patient is each methylation column?
+[PASS] M1.1 discovery: beta.csv columns -> SP01-SP36 through ID_relationship (mapping only)
+        36/36 columns mapped to SP01-SP36 via Original_ID -> P-number; ID_relationship supplies no model input (its Group/NF1/TP53 columns are not read) -- labels and mutation calls come from Table S1
+[PASS] M1.2 discovery, data-intrinsic: each beta.csv column correlates best with the same Original_ID in raw beta_55.csv
+        36/36 over 141697 CpGs; same-sample r >= 0.9994, any other sample r <= 0.9210
+[PASS] M1.3 2025-06 -> Table S1 renumbering, re-derived from Age/Sex/Ki67/WES/Target_seq/RNA-seq/Resource (OS/Sensor only to break ties)
+        82/82 old rows matched to exactly one Table S1 row (4 needed OS/Sensor); unresolved among methylation samples: none (other unresolved: none); renumbered: {'SP70': 'SP74', 'SP71': 'SP75', 'SP72': 'SP76', 'SP73': 'SP77', 'SP74': 'SP78', 'SP75': 'SP79', 'SP76': 'SP80', 'SP77': 'SP81', 'SP78': 'SP82', 'SP79': 'SP83', 'SP80': 'SP84', 'SP81': 'SP85', 'SP82': 'SP86'}; Table S1 rows with no 2025-06 row: ['SP70', 'SP71', 'SP72', 'SP73']
+[PASS] M1.4 methylation samples: set and SP IDs
+        37 validation columns -> 37 distinct SP IDs (beta_5 5, beta_14 13, beta_55 19); 36+37 SP IDs with data == Table S1 "DNA methyaltion = Yes" (73): True; identical to data/sample_manifest.csv (batch, raw column, SP ID), 73 rows: True
+
+== M2  training features: are the meta models fitted on the current Table S1 values?
+  Age: Table S1 SP01-SP36 n=36, class mean PL 21.75 / TL 41.1; shipped model parameters max|diff| 0.0e+00, class counts equal True
+  TP53: Table S1 SP01-SP36 Mut in PL 13/16, in TL 3/20; shipped model parameters max|diff| 0.0e+00, class counts equal True
+  NF1: Table S1 SP01-SP36 Mut in PL 1/16, in TL 14/20; shipped model parameters max|diff| 0.0e+00, class counts equal True
+  Ki67: Table S1 SP01-SP36 n=35, class mean PL 48 / TL 18.95; shipped model parameters max|diff| 0.0e+00, class counts equal True
+[PASS] M2.1 shipped meta models == closed-form fit on Table S1 SP01-SP36
+        max parameter difference 0.0e+00
+[PASS] M2.2 Age/TP53/NF1/Ki67 probabilities in results == Table S1 values through those models, all 86 samples
+        max|diff| 8.9e-16; missing exactly where Table S1 is empty: True
+  contrast: Ki67 class means from the inaccurate data/other_data.csv would be PL 45.69 / TL 26.45; shipped model has 48 / 18.95 -> other_data.csv is not what the model uses
+
+== M3  modality: methylation recomputed, features used vs Table S1
+[PASS] M3.1 CpG ranking recomputed from beta.csv (141824 CpGs x 36-fold LOOV)
+        score max|diff| vs beta_score_full.csv 5.0e-10; top-10000 identical to the file: True; == CpGs of the shipped models: True
+[PASS] M3.2 per-CpG models and discovery Methy (LOOV) recomputed
+        10000 CpG models max|param diff| 4.4e-16; discovery Methy vs training_methy_loov.csv 5.2e-15, vs results 5.2e-15
+[PASS] M3.3 validation Methy recomputed from the raw beta matrices
+        37 samples, max|diff| vs results 2.2e-16; CpGs used per batch {'beta_55': 9995, 'beta_5': 9517, 'beta_14': 9913}; no Methy in results for the 13 samples without methylation data: SP45, SP47, SP61, SP63, SP64, SP65, SP67, SP68, SP69, SP70, SP71, SP72, SP73
+[PASS] M3.4 every sample uses exactly the features Table S1 provides (value present; Methy iff DNA methylation = Yes)
+        mismatching samples: none; samples using each feature: {'Age': 84, 'TP53': 78, 'NF1': 77, 'Ki67': 72, 'Methy': 73}
+  feature combinations: Age+TP53+NF1+Ki67+Methy: 55; Age+TP53+NF1+Ki67: 13; Age+TP53+NF1+Methy: 9; Age+Ki67+Methy: 4; Methy: 2; Age+Methy: 2; Age+TP53+Methy: 1
+  data-entry notes: TP53/NF1 filled without WES or Target_seq: ['SP79']; WES/Target_seq = Yes but TP53 or NF1 missing: []; RNA-seq / scRNAseq / CODEX are not model inputs
+
+== M4  calls and Table S1 cells to change
+[PASS] M4.1 Prob (mean of available Age/TP53/NF1/Ki67/Methy) and PL/TL call recomputed == results
+        Prob max|diff| 8.9e-16; calls identical 86/86
+[PASS] M4.2 Table S1 "Group/Predict Group" cells to change
+        0 cells; identical to results/table_s1_group_update.csv: True
+Empty DataFrame
+Columns: [Age, Sex, NF1, TP53, features, Prob, Table S1 now, change to]
+Index: []
+[PASS] M4.3 results table carries the Table S1 values it used
+        Discovery/Validation, Resource, Age, Sex, NF1, TP53, Ki67 identical to Table S1 for 86/86: True; "Methylation availability" == Table S1 "DNA methyaltion" and == Methy_prob present: True (Yes 73, No 13); Table S1 group and formatted cls columns correct: True
+  discovery: model call differs from the training label for none
+  validation calls within 0.05 of 0.5: SP38 0.490 (Age+TP53+NF1+Ki67+Methy), SP41 0.517 (Age+TP53+NF1+Ki67+Methy), SP78 0.518 (Age+TP53+NF1+Methy), SP80 0.478 (Age+Methy), SP82 0.530 (Age+TP53+NF1+Methy)
+  SP79 without its unsourced TP53: Prob 0.235 -> PL (with TP53: 0.431 -> PL)
+
+== summary
+  PASS  M0.1 archive data/Table S1.xlsx has the same content as the collaborator file (header, row order, every cell)
+  PASS  M0.2 Table S1 layout
+  PASS  M1.1 discovery: beta.csv columns -> SP01-SP36 through ID_relationship (mapping only)
+  PASS  M1.2 discovery, data-intrinsic: each beta.csv column correlates best with the same Original_ID in raw beta_55.csv
+  PASS  M1.3 2025-06 -> Table S1 renumbering, re-derived from Age/Sex/Ki67/WES/Target_seq/RNA-seq/Resource (OS/Sensor only to break ties)
+  PASS  M1.4 methylation samples: set and SP IDs
+  PASS  M2.1 shipped meta models == closed-form fit on Table S1 SP01-SP36
+  PASS  M2.2 Age/TP53/NF1/Ki67 probabilities in results == Table S1 values through those models, all 86 samples
+  PASS  M3.1 CpG ranking recomputed from beta.csv (141824 CpGs x 36-fold LOOV)
+  PASS  M3.2 per-CpG models and discovery Methy (LOOV) recomputed
+  PASS  M3.3 validation Methy recomputed from the raw beta matrices
+  PASS  M3.4 every sample uses exactly the features Table S1 provides (value present; Methy iff DNA methylation = Yes)
+  PASS  M4.1 Prob (mean of available Age/TP53/NF1/Ki67/Methy) and PL/TL call recomputed == results
+  PASS  M4.2 Table S1 "Group/Predict Group" cells to change
+  PASS  M4.3 results table carries the Table S1 values it used

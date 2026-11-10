@@ -1,0 +1,15 @@
+cluster,state
+0,proinflammatory
+1,proinflammatory
+2,proinflammatory
+3,microglia-like
+4,proangiogenic
+5,stress-related
+6,neutrophil
+7,interferon-activated
+8,artifact
+9_0,monocyte
+9_1,proinflammatory
+9_2,proinflammatory
+10,proliferative
+11,artifact

@@ -1,0 +1,38 @@
+# Raw data: CODEX_adata_dict.npy is 7.9 GB. Archive version only, never committed.
+raw_data/
+
+# Full-size intermediates: the parquet files plus the downstream entry-point csv, about
+# 1 GB in total, over GitHub's per-file limit. pipeline/02_entropy/01_cell_level_stats.py
+# recomputes them from raw_data/.
+data_full/
+
+# Only the small tables listed in data/README.md are committed (the largest is a 24 KB
+# grid csv). Anything the pipeline writes elsewhere stays out.
+results/
+logs/
+
+# The PNGs under figures/ are committed **on purpose**: they are reproducible byte for
+# byte from the small tables in data/ (verified for the 5 entropy figures), so a reader
+# sees the figures without running anything. No other format is committed.
+figures/*.pdf
+figures/*.jpg
+figures/*.svg
+figures/*.tiff
+
+# h5ad / AnnData and friends are never committed
+*.h5ad
+*.h5
+*.npy
+*.rds
+*.Rda
+
+# Scratch and environment
+__pycache__/
+*.pyc
+.ipynb_checkpoints/
+.Rhistory
+.RData
+.Rproj.user/
+Rplots.pdf
+.DS_Store
+Thumbs.db

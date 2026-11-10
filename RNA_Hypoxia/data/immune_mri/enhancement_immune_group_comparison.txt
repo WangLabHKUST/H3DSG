@@ -1,0 +1,25 @@
+cell-type proportions: raw_data/ct_prop_adjusted_31_samples.csv
+MRI: raw_data/clinical_table_s1_20260514.xlsx (rows 1-36 only)
+n_samples: 28
+pairwise significance: BH-adjusted p < 0.05
+
+Tumor Enhancement counts (short labels):
+  Focal: 17
+  Lept: 8
+  Without: 3
+
+Kruskal-Wallis (immune ratio ~ Tumor Enhancement):
+  T_NK: chi-squared=8.16, p=0.0169 (n=28, k=3)
+  Myeloid: chi-squared=0.4484, p=0.7992 (n=28, k=3)
+  immune_total: chi-squared=0.9055, p=0.6359 (n=28, k=3)
+
+Pairwise Wilcoxon (BH-adjusted):
+  T_NK | Lept vs Focal: p_adj=0.03382 *
+  T_NK | Without vs Focal: p_adj=0.1355
+  T_NK | Without vs Lept: p_adj=0.6098
+  Myeloid | Lept vs Focal: p_adj=0.8384
+  Myeloid | Without vs Focal: p_adj=0.8384
+  Myeloid | Without vs Lept: p_adj=0.8384
+  immune_total | Lept vs Focal: p_adj=0.8842
+  immune_total | Without vs Focal: p_adj=0.8842
+  immune_total | Without vs Lept: p_adj=0.8842

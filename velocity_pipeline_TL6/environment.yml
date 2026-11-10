@@ -1,0 +1,26 @@
+# Same versions as the conda environment that produced the final figures.
+# velocyto (step 1) does not build on Windows; steps 2 to 6 need the other packages only.
+name: velo
+channels:
+  - conda-forge
+  - bioconda
+  - defaults
+dependencies:
+  - python=3.10
+  - samtools            # called by velocyto to sort the BAM
+  - pip
+  - pip:
+      - velocyto==0.17.17
+      - scvelo==0.3.4
+      - scanpy==1.11.5
+      - anndata==0.11.4
+      - umap-learn==0.5.12
+      - pynndescent==0.6.0
+      - scikit-learn==1.7.2
+      - numpy==1.26.4
+      - pandas==2.3.3
+      - matplotlib==3.10.9
+      - numba==0.65.1
+      - h5py==3.16.0
+      - loompy==3.0.8
+      - joblib==1.5.3

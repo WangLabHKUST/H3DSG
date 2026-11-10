@@ -1,0 +1,6 @@
+sample	seurat_id	bam	barcodes	margin
+ZDK-1	TL_6_1	data/bam/ZDK-1/possorted_genome_bam.bam	../Single_Cell_RNAseq/inputs/raw_counts/ZDK-1/barcodes.tsv.gz	0
+ZDK-2	TL_6_2	data/bam/ZDK-2/possorted_genome_bam.bam	../Single_Cell_RNAseq/inputs/raw_counts/ZDK-2/barcodes.tsv.gz	0
+ZDK-3	TL_6_3	data/bam/ZDK-3/possorted_genome_bam.bam	../Single_Cell_RNAseq/inputs/raw_counts/ZDK-3/barcodes.tsv.gz	0
+ZDK-4	TL_6_4	data/bam/ZDK-4/possorted_genome_bam.bam	../Single_Cell_RNAseq/inputs/raw_counts/ZDK-4/barcodes.tsv.gz	0
+ZDK-7	TL_6_5	data/bam/ZDK-7/possorted_genome_bam.bam	../Single_Cell_RNAseq/inputs/raw_counts/ZDK-7/barcodes.tsv.gz	1

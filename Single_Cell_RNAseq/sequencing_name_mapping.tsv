@@ -1,0 +1,23 @@
+sequencing_name	SP_ID	renamed_id	sid	group	in_final_cohort	same_name_as_another_patient
+SP22	SP02	PL_5	PL_5	PL	True	True
+SP04	SP03	PL_4	PL_4	PL	True	True
+SP15	SP04	PL_3	PL_3	PL	True	True
+SP41	SP10	PL_2	PL_2	PL	True	True
+SP11	SP22	TL_4	TL_4	TL	True	True
+SP05	SP29	TL_1	TL_1	TL	True	True
+SP21T5	SP30	TL_5	TL_5	TL	True	False
+SP13	SP32	TL_2	TL_2	TL	True	True
+SP24	SP38	PL_1	PL_1	PL	True	True
+SP20T5	SP50	TL_3	TL_3	TL	True	False
+MTSC02	SP68	TL_11	TL_11	TL	True	False
+MTSC01	SP70	PL_10	PL_10	PL	True	False
+MTSC06	SP71	PL_11	PL_11	PL	True	False
+DHY-1	SP72			PL	False	False
+DHY-2	SP72			PL	False	False
+DHY-4	SP72			PL	False	False
+DHY-5	SP72	PL_9	PL_6_4	PL	True	False
+ZDK-1	SP73	TL_6	TL_6_1	TL	True	False
+ZDK-2	SP73	TL_7	TL_6_2	TL	True	False
+ZDK-3	SP73	TL_8	TL_6_3	TL	True	False
+ZDK-4	SP73	TL_9	TL_6_4	TL	True	False
+ZDK-7	SP73	TL_10	TL_6_5	TL	True	False
